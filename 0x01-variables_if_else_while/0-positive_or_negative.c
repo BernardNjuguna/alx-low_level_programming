@@ -4,9 +4,9 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - positive and negative function
- *
- * return: always 0
+ * main	- positive or negative function 
+ * 
+ * Return: always 0
  */
 int main(void)
 {

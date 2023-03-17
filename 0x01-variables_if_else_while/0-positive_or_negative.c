@@ -4,10 +4,11 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main	- positive or negative function 
- * 
+ * main - 0 positive or negative
+ *
  * Return: always 0
  */
+
 int main(void)
 {
 	int n;

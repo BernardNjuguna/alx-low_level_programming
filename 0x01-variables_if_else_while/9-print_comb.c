@@ -15,10 +15,11 @@ int main(void)
 		if (b == 9)
 			putchar(b + '0');
 		else
-		putchar(b + '0');
-		putchar(',');
-		putchar(' ');
-		return (0);
+		{
+			putchar(b + '0');
+			putchar(',');
+			putchar(' ');
+		}
 	}
+		return (0);
 }
-

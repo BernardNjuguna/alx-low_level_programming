@@ -13,17 +13,17 @@ void print_triangle(int size)
 	}
 	else
 	{
-		int x, y;
+		int a, b, c;
 
-		for (x = 0; x <= size; x++)
+		for (a = 0; a < size; a++)
 		{
-			for (y = 1; y <= size; y++)
+			for (b = size - a; b > 1; b++)
 			{
-				_putchar(' ');
+				_putchar(32);
 			}
-			for (y = 1; y <= x; y++)
+			for (c = 0; c <= a; c++)
 			{
-				_putchar('#');
+				_putchar(35);
 			}
 			_putchar('\n');
 		}

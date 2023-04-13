@@ -18,15 +18,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		sl1++;
 	while (s2 && s2[sl2])
 		sl2++;
-	if (n <= sl1)
+	if (n < sl1)
 		a = malloc(sizeof(char) * (sl1 + n + 1));
 	else
 		a = malloc(sizeof(char) * (sl1 + sl2 + 1));
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-	if (a == NULL)
+	if (!a)
 		return (NULL);
 	while (x < sl1)
 	{
@@ -35,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	while (n < sl2 && x < (sl1 + sl2))
 		a[x++] = s2[y++];
-	while (n >= sl2 && x < (sl1 + sl2))
+	while (n > sl2 && x < (sl1 + sl2))
 		a[x++] = s2[y++];
 	a[x] = '\0';
 	return (a);
